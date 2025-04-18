@@ -2,7 +2,7 @@ SELITA FAITH NAMBULE ,2021470776 & CHIMWEMWE NAMUTOWE
 # lab5-UI-frameworks-
 intorduction to some UI frameworks  (tailwind,bootsrap and react) how they work and their differences.
 
-# What ive learnt about the frameworks
+# What i've learnt about the frameworks
 -Tailwind
 its a utility-first CSS framework that lets us style our websites directly in our HTML using small, reusable classes. Instead of writing custom CSS, we use Tailwind’s predefined classes to control things like layout, spacing, colors, and fonts, making it fast and flexible for building modern, responsive designs.
 
