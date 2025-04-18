@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lab 3 | Home</title>
+  
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Bootstrap Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Scent-sational</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacts.html">Contact</a></li>
+        </ul>
+        <button id="themeToggle" class="btn btn-outline-light">Switch Theme</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="text-center mb-4">
+    <h2>Welcome to Scent-sational Fragrances!</h2>
+    <p>All things "Smelling good".</p>
+    <div id="clock" class="fw-bold fs-5 text-primary"></div>
+  </section>
+
+  <!-- Alert and Button -->
+  <div class="container mb-4">
+    <div class="alert alert-info" role="alert">
+      WE HAVE AMAZING PROMOTIONS THIS WEEK! UP TO 20% OFF!
+    </div>
+    <button class="btn btn-primary">Shop Now</button>
+  </div>
+
+  <!-- Two-column layout -->
+  <main class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <article>
+          <h2>Latest News</h2>
+          <p>Discover our latest fragrance collection, now available in store and online.</p>
+        </article>
+      </div>
+      <div class="col-md-4">
+        <aside>
+          <h3>Related Links</h3>
+          <ul class="list-group">
+            <li class="list-group-item"><a href="https://www.instagram.com/handf_scents?igsh=MXduOXhzOHF1MDBndA==">Visit our Instagram</a></li>
+            <li class="list-group-item"><a href="#">Visit our Facebook</a></li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+
+    <!-- Team Members Section -->
+    <section class="mt-4">
+      <h2>Team Members</h2>
+      <ul id="userList" class="list-group mb-2"></ul>
+      <button id="loadUsersBtn" class="btn btn-secondary">Load Users</button>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="mt-4">
+      <div class="accordion" id="faqAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqHeading">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse">
+              What is this website about?
+            </button>
+          </h2>
+          <div id="faqCollapse" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              This is a demo project for learning web development.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Back to Top -->
+    <div class="text-center mt-4">
+      <button id="backToTop" class="btn btn-dark">Back to Top</button>
+    </div>
+  </main>
+
+  <!-- Bootstrap JS (required for some components) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

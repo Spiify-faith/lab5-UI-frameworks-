@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Week 2 Lab - Structured Web Page</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Tailwind Navbar -->
+  <nav class="bg-blue-600 p-4 text-white">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-xl font-bold">Scent-sational</h1>
+      <div class="space-x-4">
+        <a href="#" class="hover:underline">Home</a>
+        <a href="#" class="hover:underline">About</a>
+        <a href="#" class="hover:underline">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Two-column layout -->
+  <div class="container mx-auto mt-6 grid grid-cols-1 md:grid-cols-2 gap-6 px-4">
+    <article class="bg-white p-4 rounded shadow">
+      <h2 class="text-2xl font-semibold mb-2">Latest News</h2>
+      <p>HTML5 has introduced powerful new semantic elements.</p>
+    </article>
+    <aside class="bg-white p-4 rounded shadow">
+      <h3 class="text-xl font-medium mb-2">Related Links</h3>
+      <ul class="list-disc list-inside space-y-1">
+        <li><a href="#" class="text-blue-600 hover:underline">Web Standards</a></li>
+        <li><a href="#" class="text-blue-600 hover:underline">HTML5 Guide</a></li>
+      </ul>
+    </aside>
+  </div>
+
+  <!-- Alert & Button -->
+  <div class="container mx-auto mt-6 px-4">
+    <div class="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 p-4 rounded" role="alert">
+      <p class="font-bold">Notice</p>
+      <p>This is an important update!</p>
+    </div>
+    <button class="mt-4 bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+      Click Me
+    </button>
+  </div>
+
+  <!-- Tailwind Card Layout -->
+  <div class="bg-white rounded shadow p-4 max-w-md mx-auto my-6">
+    <img src="images/mists.jpg" alt="Example Image" class="rounded mb-3 w-full">
+    <h2 class="text-xl font-bold text-gray-800 mb-2">Welcome</h2>
+    <p class="text-gray-600 mb-4">Tailwind helps you build fast and beautiful UIs.</p>
+    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+      Get Started
+    </button>
+  </div>
+
+  <!-- Contact Form -->
+  <footer class="container mx-auto px-4 mb-8">
+    <section class="bg-white p-6 rounded shadow">
+      <h2 class="text-2xl font-semibold mb-4">Contact us</h2>
+      <form action="#" method="post" class="space-y-4">
+        <div>
+          <label for="name" class="block font-medium">Full Name</label>
+          <input type="text" id="name" required minlength="3" class="w-full border border-gray-300 p-2 rounded">
+        </div>
+        <div>
+          <label for="email" class="block font-medium">Email</label>
+          <input type="email" id="email" name="email" required class="w-full border border-gray-300 p-2 rounded">
+        </div>
+        <div>
+          <label for="message" class="block font-medium">Message</label>
+          <textarea id="message" name="message" required minlength="10" class="w-full border border-gray-300 p-2 rounded"></textarea>
+        </div>
+        <button type="submit" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded">
+          Send message
+        </button>
+      </form>
+    </section>
+    <p class="text-center mt-6 text-sm text-gray-500">&copy; 2025 My Website</p>
+  </footer>
+
+</body>
+</html>
