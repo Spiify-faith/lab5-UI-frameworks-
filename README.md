@@ -1,5 +1,5 @@
 SELITA FAITH NAMBULE ,2021470776 & CHIMWEMWE NAMUTOWE
-# lab5-UI-frameworks-
+# lab5-UI frameworks
 intorduction to some UI frameworks  (tailwind,bootsrap and react) how they work and their differences.
 
 # What i've learnt about the frameworks
